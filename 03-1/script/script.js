@@ -14,10 +14,11 @@ submitBtn.addEventListener('click', function(e){
         rezultText.innerHTML = `Your guess is right ${number}`;
         
     }else if(+number > randomNr){
-        rezultText.innerHTML = `The guessed number is bigger!`;
+        rezultText.innerHTML = `The guessed number is smaller!`;
     }
     else if(+number < randomNr){
-        rezultText.innerHTML = `The guessed number is smaller!`;
+        
+        rezultText.innerHTML = `The guessed number is bigger!`;
     }
     numberOfGuesses = ++numberOfGuesses;
     rezultNumber.innerHTML = `${numberOfGuesses} guesses was done`;
